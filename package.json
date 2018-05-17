@@ -1,23 +1,25 @@
 {
   "name": "ztao-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "author": "ztao",
   "bin": {
     "ztao": "bin/ztao"
   },
   "scripts": {
-    "start": "npm link"
+    "start": "npm link",
+    "fabu":"npm publish"
   },
-  "repository": "",
+  "repository": "https://github.com/aiyuekuang/ztao.git",
   "description": "脚手架",
   "devDependencies": {
+  },
+  "dependencies": {
     "chalk": "^2.4.1",
     "co": "^4.6.0",
     "co-prompt": "^1.0.0",
     "commander": "^2.15.1",
     "download-git-repo": "^1.0.2",
     "ora": "^2.1.0"
-  },
-  "dependencies": {}
+  }
 }
