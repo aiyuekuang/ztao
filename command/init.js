@@ -9,6 +9,7 @@ const prompt = require('co-prompt')
 module.exports = () => {
     co(function *() {
 // 根据输入，获取项目名称
+        let type = yield prompt('项目是使用react还是vue？（react直接回车，vue则输入vue）：')
         let projectName = yield prompt('项目名称：')
 
         if (!projectName) {  // project-name 必填
@@ -22,7 +23,7 @@ module.exports = () => {
                 console.log(chalk.red(`项目${projectName}已经存在`))
                 process.exit()
             } else {
-                download(projectName)
+                download(projectName,type)
                     .then(target => process.exit())
                     .catch(err => console.log(err))
             }

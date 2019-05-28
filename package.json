@@ -1,6 +1,6 @@
 {
   "name": "ztao-cli",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "license": "MIT",
   "author": "ztao",
   "bin": {
@@ -8,12 +8,11 @@
   },
   "scripts": {
     "start": "npm link",
-    "fabu":"npm publish"
+    "fabu": "npm publish"
   },
   "repository": "https://github.com/aiyuekuang/ztao.git",
   "description": "脚手架",
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "dependencies": {
     "chalk": "^2.4.1",
     "co": "^4.6.0",
